@@ -12,7 +12,7 @@ root.render(
     <App2 />
     <App3 name="Aakash"/>
     <App4 city="banglore"/>
- 
+    <App5  name="['akash' , 'abc' ,123]"/>
 
   </StrictMode>
 );

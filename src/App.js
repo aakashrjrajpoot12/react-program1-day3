@@ -83,3 +83,26 @@ export class App4 extends React.Component {
             return <p>Hi,Stranger</p>;
         }
       
+
+        export default class App7 extends React.Component {
+          constructor(props){
+          super(props);
+          this.state={date:new date(),number: 10};
+        }
+        changeState(){
+          this.setState({date:new Date()});
+
+        }
+          
+          
+          render(){
+            this.state.number=20;
+          return (
+            <div>
+              <h2>Clock</h2>
+              <p>It is {this.state.date.toLocaleTimeString()}now</p>
+              <p>{this.changeState()} </p>
+            </div>
+          );
+        }
+        }       

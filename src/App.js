@@ -20,6 +20,7 @@ export class App2 extends React {
     );
   }
 }
+
 export function App3(props) {
   return (
     <div>
@@ -28,6 +29,7 @@ export function App3(props) {
     </div>
   );
 }
+
 export class App4 extends React {
   render() {
     return (
@@ -36,9 +38,9 @@ export class App4 extends React {
         <p>{this.props.city}</p>
         <MyButton />
       </div>
-    );
-  }
-}
+     );
+   }
+ }
 function MyButton() {
   return <button>My Button</button>;
 }
@@ -70,13 +72,14 @@ export function App5(props) {
           );
     */
 }
+
 export function App6(props) {
   if (props.name != '') {
     return <p>Hi,{props.name}</p>;
   }
   return <p>Hi,Stranger</p>;
 }
-/*
+
 export default class App7 extends React.Component {
   constructor(props) {
     super(props);
@@ -94,16 +97,14 @@ export default class App7 extends React.Component {
         <h2>Clock</h2>
         <p>It is {this.state.date.toLocaleTimeString()}now</p>
         <p>{this.changeState()} </p>
-        <MyButton1 data={this.state.date}/>
+        <MyButton1 data={this.state.date} />
       </div>
     );
   }
 }
-class MyButton1 extends Component{
-  render(){
-    return(
-      <input type="text" value={this.props.data}/>
-    );
+class MyButton1 extends Component {
+  render() {
+    return <input type="text" value={this.props.data} />;
   }
+  
 }
-*/

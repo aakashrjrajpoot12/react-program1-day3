@@ -38,9 +38,9 @@ export class App4 extends React {
         <p>{this.props.city}</p>
         <MyButton />
       </div>
-     );
-   }
- }
+    );
+  }
+}
 function MyButton() {
   return <button>My Button</button>;
 }
@@ -58,19 +58,11 @@ export function App5(props) {
     </li>
   ));
   console.log(typeof elem);
-  return <ul>{elem}</ul>;
 
-  /*
-    const names=[props.name];
-   //const names=[...props.name]; 
-   const elem=names.map(name=>
-      <li>
-        {name}
-        </li>);
-        return(<ul>
-          {elem}</ul>
-          );
-    */
+  const names = [props.name];
+  //const names=[...props.name];
+  const elem = names.map((name) => <li>{name}</li>);
+  return <ul>{elem}</ul>;
 }
 
 export function App6(props) {
@@ -106,5 +98,4 @@ class MyButton1 extends Component {
   render() {
     return <input type="text" value={this.props.data} />;
   }
-  
 }
